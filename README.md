@@ -41,7 +41,7 @@ This architecture incorporates several key AWS services and design patterns to c
 
 ## Why Choose SSM Session Manager?
 
-The primary reasons for adopting SSM Session Manager in this project's AWS architecture are as follows:
+AWS Systems Manager (SSM) Session Manager is widely recognized as a modern best practice for securely managing EC2 instances. The primary reasons for adopting it in this project's AWS architecture are as follows:
 
 1.  **Enhanced Security**
     *   Eliminates the need for SSH key management and open ports.
