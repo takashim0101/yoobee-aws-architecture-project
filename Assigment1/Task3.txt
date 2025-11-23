@@ -1,0 +1,23 @@
+Assessment Tasks: AWS Theoretical and Practical Concepts Evaluation
+Scenario:
+Yoobee College of Creative Innovation is undergoing a digital transformation to enhance its academic services and operational efficiency. The institution aims to move its IT infrastructure to the AWS cloud to improve scalability, reduce costs, and ensure high availability for students and staff. Currently, Yoobee College hosts learning management systems, student databases, and faculty applications on on-premises servers, which face performance bottlenecks and security challenges.
+The college plans to implement a server-based virtualization infrastructure using AWS services to address these issues. The new cloud infrastructure should meet the following key requirements:
+• Cost-effectiveness: Optimize cloud expenses while ensuring resource availability.
+• Scalability: Support increasing student enrolment and faculty requirements.
+• Security: Ensure compliance with best security practices to protect academic and student data.
+• High Availability: Implement redundancy and load balancing to maintain uninterrupted services.
+As a Cloud Solutions Engineer, you evaluate, design, implement, and optimize Yoobee College's cloud-based server virtualization infrastructure. Your role involves both theoretical assessments and hands-on AWS implementation to ensure the cloud environment meets industry standards and institutional goals.
+Note: You can use an example of 5 on-premises computer systems at Yoobee College of Creative Innovation to illustrate the adoption of an AWS-based cloud infrastructure.
+(Learning management systems = 2 servers | Staff (Facutly) Application = 2 servers |Students Database = 1 system)
+
+Task 3: Practical Implementation: Virtual Machines and Storage Services
+1. Launch two AWS EC2 instances (one Linux and one Windows) with appropriate configurations for academic applications.
+2. Configure an S3 bucket for storage, applying security policies to restrict unauthorized access.
+3. Demonstrate the implementation of an Elastic Load Balancer (ELB) to distribute traffic between EC2 instances.
+4. Document step-by-step implementation with screenshots.
+Deliverables:
+A step-by-step implementation document (PDF format only) with:
+• Details of EC2 instance configurations
+• S3 bucket security policies
+• Elastic Load Balancer setup
+• AWS console screenshots demonstrating each step

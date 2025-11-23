@@ -1,0 +1,23 @@
+Assessment Tasks: AWS Theoretical and Practical Concepts Evaluation
+Scenario:
+Yoobee College of Creative Innovation is undergoing a digital transformation to enhance its academic services and operational efficiency. The institution aims to move its IT infrastructure to the AWS cloud to improve scalability, reduce costs, and ensure high availability for students and staff. Currently, Yoobee College hosts learning management systems, student databases, and faculty applications on on-premises servers, which face performance bottlenecks and security challenges.
+The college plans to implement a server-based virtualization infrastructure using AWS services to address these issues. The new cloud infrastructure should meet the following key requirements:
+• Cost-effectiveness: Optimize cloud expenses while ensuring resource availability.
+• Scalability: Support increasing student enrolment and faculty requirements.
+• Security: Ensure compliance with best security practices to protect academic and student data.
+• High Availability: Implement redundancy and load balancing to maintain uninterrupted services.
+As a Cloud Solutions Engineer, you evaluate, design, implement, and optimize Yoobee College's cloud-based server virtualization infrastructure. Your role involves both theoretical assessments and hands-on AWS implementation to ensure the cloud environment meets industry standards and institutional goals.
+Note: You can use an example of 5 on-premises computer systems at Yoobee College of Creative Innovation to illustrate the adoption of an AWS-based cloud infrastructure.
+(Learning management systems = 2 servers | Staff (Facutly) Application = 2 servers |Students Database = 1 system)
+
+Task 2: Theoretical and Practical Evaluation: Designing a Virtualization Architecture
+1. Design and deploy a cloud-based server virtualization infrastructure for Yoobee using AWS services (e.g., EC2, VPC, IAM, and RDS).
+2. Include a diagram illustrating the architecture, depicting security groups, subnets, and network access control.
+3. Define user roles and permissions using AWS Identity and Access Management (IAM) to ensure security and compliance.
+4. Provide a document explaining the architecture, security policies, and service choices.
+Deliverables:
+• A cloud architecture diagram (PNG, JPEG, or PDF format) created using Lucid chart, AWS Architecture Designer, or similar tools.
+• A structured report (PDF format only) detailing:
+ Infrastructure design and chosen AWS services
+ Security considerations and IAM policies
+ Justification for selected configurations
