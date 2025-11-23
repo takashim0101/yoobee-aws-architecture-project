@@ -16,17 +16,17 @@ This report details the theoretical evaluation and practical implementation of o
 *   **Details:** (Refer to Task 2/3 implementation for instance placement.)
 
 #### 1.1.3. Principle of Least Privilege for Network Traffic (Security Groups)
-*   **Action:** Configure Security Groups for ALB, EC2 instances (LMS, Faculty), RDS, and Bastion host with the principle of least privilege.
+*   **Action:** Configure Security Groups for ALB, EC2 instances (LMS, Faculty), and RDS with the principle of least privilege.
 *   **Steps:**
     1.  **ALB Security Group (`ALB-SG`):**
         *   Inbound: Allow HTTP (Port 80) and HTTPS (Port 443) from `0.0.0.0/0`.
-        *   Outbound: Allow all traffic (or restrict to target group ports).
-    2.  **EC2 Application Servers Security Group (`App-SG`):**
+        *   Outbound: Allow traffic to `LMS-SG` and `Faculty-SG` on application ports (e.g., 80/443 or custom app port).
+    2.  **EC2 Application Servers Security Groups (`LMS-SG`, `Faculty-SG`):**
         *   Inbound: Allow traffic from `ALB-SG` on application ports (e.g., 80/443 or custom app port).
-        *   Outbound: Allow traffic to RDS Security Group on database port (e.g., 3306 for MySQL).
+        *   Outbound: Allow traffic to `RDS-SG` on database port (5432 for PostgreSQL).
         *   Outbound: Allow HTTP/HTTPS (Port 80/443) for OS updates.
     3.  **RDS Security Group (`RDS-SG`):**
-        *   Inbound: Allow traffic from `App-SG` on database port (e.g., 3306).
+        *   Inbound: Allow traffic from `LMS-SG` and `Faculty-SG` on database port (5432).
         *   Outbound: Deny all (default).
 
 #### 1.1.4. Secure Administrative Access (AWS Systems Manager)
